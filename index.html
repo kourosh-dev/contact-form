@@ -17,72 +17,70 @@
 </head>
 <body>
   <div class="container">
-    <h1>Contact Us</h1>
-    <form>
+    <h1 class="h1">Contact Us</h1>
+    <form class="form" autocomplete="off">
       <div class="fild-row">
         <div class="fild-grid">
           <div class="container-input">
-            <label for="first-name">
+            <label class="label-top" for="first-name">
               first name 
               <span class="asteris"> *</span>
             </label>
-            <input type="text" name="first-name" id="first-name">
+            <input class="input-height input-text" type="text" name="first-name" id="first-name">
           </div>
           <div class="container-input">
-            <label for="last-name">
+            <label class="label-top" for="last-name">
               last name
               <span class="asteris"> *</span>
             </label>
-            <input type="text" name="last-name" id="last-name">
+            <input class="input-height input-text" type="text" name="last-name" id="last-name">
           </div>
         </div>
       </div>
       <div class="fild-row">
         <div class="container-input">
-          <label for="email">
+          <label class="label-top" for="email">
             email address 
             <span class="asteris"> *</span>
           </label>
-          <input type="email" name="email" id="email">
+          <input class="input-height input-text" type="email" name="email" id="email">
         </div>
       </div>
       <div class="fild-row">
-        <label>
+        <label class="label-top">
           query type
-          <span class="asteris">*</span>
+          <span class="asteris"> *</span>
         </label>
         <div class="fild-grid">
-          <div class="container-input">
-            <input type="radio" name="query-type" id="general-enquiry">
+          <div class="container-input cont-radio">
+            <input class="input-height" type="radio" name="query-type" id="general-enquiry">
             <label for="general-enquiry">general enquiry</label>
           </div>
-          <div class="container">
-            <input type="radio" name="query-type" id="support-request">
+          <div class="container-input cont-radio">
+            <input class="input-height" type="radio" name="query-type" id="support-request">
             <label for="support-request">support request</label>
           </div>
         </div>
       </div>
       <div class="fild-row">
         <div class="container-input">
-          <label for="massage">
+          <label class="label-top" for="massage">
             massage
-            <span class="asteris">*</span>
+            <span class="asteris"> *</span>
           </label>
-          <textarea name="massage" id="massage"></textarea>
+          <textarea class="text-area input-text" name="massage" id="massage"></textarea>
         </div>
       </div>
-      <div class="fild-row">
+      <div class="fild-row row-field-check">
         <div class="container-input">
           <input type="checkbox" name="check" id="check">
           <label for="check">
-            i consent to being contacted by the team
-            <span class="astreis">*</span>
+            I consent to being contacted by the team
+            <span class="asteris"> *</span>
           </label>
         </div>
       </div>
-      <div class="fild-row">
-        <button class="submit-button" type="submit">submit</button>
-      </div>
+      <button class="submit-button" type="submit">submit</button>
     </form>
   </div>
 </body>
