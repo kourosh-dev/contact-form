@@ -1,6 +1,7 @@
 const emailElm = document.querySelector('.js-email-field');
 const fieldsElm = document.querySelectorAll('.js-fields');
 const radiosElm = document.querySelectorAll('.js-radio');
+const checkboxElm = document.querySelector('.js-checkbox');
 
 const errorField = document.querySelectorAll('.js-error-field');
 const errorEmail = document.querySelector('.js-error-email');
@@ -26,7 +27,6 @@ radiosElm.forEach(elm => {
   });
 });
 
-const checkboxElm = document.querySelector('.js-checkbox');
 checkboxElm.addEventListener('change', () => {
   errorCheckbox.classList.remove('display');
 });
@@ -36,13 +36,30 @@ const containersRadio = document.querySelectorAll('.js-radio-cont');
 radiosElm.forEach((elm, i) => {
   elm.addEventListener('change', () => {
     // remove previos styles
-    
     containersRadio.forEach(elm => {
       elm.classList.remove('checked');
     });
+
     containersRadio[i].classList.add('checked');
   });
 });
+
+// add checked icon to checkbox
+const checkIcon = document.querySelector('.js-checkbox-icon');
+checkboxElm.addEventListener('change', () => {
+  checkboxElm.style.display = 'none';
+  checkIcon.classList.add('display');
+});
+
+function unchecking() {
+  checkboxElm.checked = false;
+  checkboxElm.style.display = 'initial';
+  checkIcon.classList.remove('display');
+}
+
+const labelCheckbox = document.querySelector('.js-label-checkbox');
+checkIcon.addEventListener('click', unchecking);
+
 
 // validatin inputs
 function validation() {
