@@ -13,6 +13,22 @@
   --gray-darker: hsl(187, 24%, 22%);
 }
 
+.error-massage{
+  color: var(--red);
+  font-size: .85rem;
+  margin-top: 8px;
+  text-transform: initial;
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+.red-border {
+  border-color: var(--red) !important;
+}
+
 body {
   min-height: 100vh;
   background-color: var(--green-lighter);

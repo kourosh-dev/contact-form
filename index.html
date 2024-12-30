@@ -26,14 +26,16 @@
               first name 
               <span class="asteris"> *</span>
             </label>
-            <input class="input-height input-text" type="text" name="first-name" id="first-name">
+            <input class="input-height input-text js-fields" type="text" name="first-name" id="first-name">
+            <div class="error-massage js-error-field">This field is required</div>
           </div>
           <div class="container-input">
             <label class="label-top" for="last-name">
               last name
               <span class="asteris"> *</span>
             </label>
-            <input class="input-height input-text" type="text" name="last-name" id="last-name">
+            <input class="input-height input-text js-fields" type="text" name="last-name" id="last-name">
+            <div class="error-massage js-error-field">This field is required</div>
           </div>
         </div>
       </div>
@@ -43,7 +45,8 @@
             email address 
             <span class="asteris"> *</span>
           </label>
-          <input class="input-height input-text" type="email" name="email" id="email">
+          <input class="input-height input-text js-email-field" type="email" name="email" id="email">
+          <div class="error-massage js-error-email">Pleas enter a valid email <address></address></div>
         </div>
       </div>
       <div class="fild-row">
@@ -53,14 +56,15 @@
         </label>
         <div class="fild-grid grid-radio">
           <div class="container-input cont-radio">
-            <input class="input-height" type="radio" name="query-type" id="general-enquiry">
+            <input class="input-height js-radio" type="radio" name="query-type" id="general-enquiry">
             <label for="general-enquiry">general enquiry</label>
           </div>
           <div class="container-input cont-radio">
-            <input class="input-height" type="radio" name="query-type" id="support-request">
+            <input class="input-height js-radio" type="radio" name="query-type" id="support-request">
             <label for="support-request">support request</label>
           </div>
         </div>
+        <div class="error-massage js-error-radio">Pleas select a query type</div>
       </div>
       <div class="fild-row">
         <div class="container-input">
@@ -68,19 +72,21 @@
             massage
             <span class="asteris"> *</span>
           </label>
-          <textarea class="text-area input-text" name="massage" id="massage"></textarea>
+          <textarea class="text-area input-text js-fields" name="massage" id="massage"></textarea>
+          <div class="error-massage js-error-field">This field is required</div>
         </div>
       </div>
       <div class="fild-row row-field-check">
         <div class="container-input">
-          <input type="checkbox" name="check" id="check">
+          <input class="js-checkbox" type="checkbox" name="check" id="check">
           <label for="check">
             I consent to being contacted by the team
             <span class="asteris"> *</span>
           </label>
+          <div class="error-massage js-error-checkbox">To submit form, pleas consent to being contacted</div>
         </div>
       </div>
-      <button class="submit-button" type="submit">submit</button>
+      <button class="submit-button js-submit" type="button">submit</button>
     </form>
   </div>
 </body>
