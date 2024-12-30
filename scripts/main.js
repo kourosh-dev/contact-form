@@ -21,20 +21,25 @@ emailElm.addEventListener('click', () => {
 });
 
 radiosElm.forEach(elm => {
-  elm.addEventListener('click', () => {
+  elm.addEventListener('change', () => {
     errorRadio.classList.remove('display');
   });
 });
 
 const checkboxElm = document.querySelector('.js-checkbox');
-checkboxElm.addEventListener('click', () => {
+checkboxElm.addEventListener('change', () => {
   errorCheckbox.classList.remove('display');
 });
 
 // add style to radio
 const containersRadio = document.querySelectorAll('.js-radio-cont');
 radiosElm.forEach((elm, i) => {
-  elm.addEventListener('click', () => {
+  elm.addEventListener('change', () => {
+    // remove previos styles
+    
+    containersRadio.forEach(elm => {
+      elm.classList.remove('checked');
+    });
     containersRadio[i].classList.add('checked');
   });
 });

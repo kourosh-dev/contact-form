@@ -33,6 +33,14 @@
 .checked {
   background-color: rgba(12, 125, 105, 0.1);
   border-color: var(--green-medium) !important;
+
+  .checked-radio-icon {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
 }
 /* javaScript classes */
 
@@ -46,6 +54,10 @@ body {
   text-transform: capitalize;
   color: var(--gray-darker);
   padding: 30px 24px;
+}
+
+.checked-radio-icon {
+  display: none;
 }
 
 .container {
