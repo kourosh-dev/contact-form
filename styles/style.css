@@ -22,6 +22,7 @@ body {
   justify-content: center;
   text-transform: capitalize;
   color: var(--gray-medium);
+  padding: 30px 24px;
 }
 
 .container {
@@ -155,5 +156,26 @@ body {
 
   &:hover {
     background-color: hsl(168, 88%, 14%);
+  }
+}
+
+@media(max-width: 390px) {
+  body {
+    padding: 16px 10px;
+  }
+  .fild-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-radio {
+    gap: 10px;
+  }
+
+  .text-area {
+    height: 100px;
+  }
+
+  .row-field-check {
+    margin-block: 26px;
   }
 }
