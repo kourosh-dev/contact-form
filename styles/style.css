@@ -13,7 +13,8 @@
   --gray-darker: hsl(187, 24%, 22%);
 }
 
-.error-massage{
+/* javascript classes */
+.error-massage {
   color: var(--red);
   font-size: .85rem;
   margin-top: 8px;
@@ -29,6 +30,12 @@
   border-color: var(--red) !important;
 }
 
+.checked {
+  background-color: rgba(12, 125, 105, 0.1);
+  border-color: var(--green-medium) !important;
+}
+/* javaScript classes */
+
 body {
   min-height: 100vh;
   background-color: var(--green-lighter);
@@ -37,7 +44,7 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-  color: var(--gray-medium);
+  color: var(--gray-darker);
   padding: 30px 24px;
 }
 
