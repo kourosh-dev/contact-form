@@ -4,8 +4,9 @@ This repository contains the source code for a simple and responsive contact for
 
 ![design review](design/desktop-preview.jpg)
 
+### live version
 ```
-here is the live page  https://kourosh-dev.github.io/contact-form/
+https://kourosh-dev.github.io/contact-form/
 ```
 
 
