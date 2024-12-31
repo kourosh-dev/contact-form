@@ -51,6 +51,7 @@ checkboxElm.addEventListener('change', () => {
   checkIcon.classList.add('display');
 });
 
+// remove checked style
 function unchecking() {
   checkboxElm.checked = false;
   checkboxElm.style.display = 'initial';
@@ -101,20 +102,38 @@ function removeStyle() {
     elm.classList.remove('display');
   });
 
-  document.querySelectorAll('input').forEach(elm => {
-    elm.classList.remove('red-border');
+  radiosElm.forEach(elm => {
+    elm.checked = false;
+
   });
 
-  document.querySelector('.checked').classList.remove('ckecked');
+  unchecking();
+  emailElm.value = '';
+
+  containersRadio.forEach(elm => {
+    elm.classList.remove('checked');
+  });
+
+  fieldsElm.forEach(elm => {
+    elm.classList.remove('red-border');
+    elm.value = '';
+  });
+}
+
+function successMassage() {
+  const massageElm = document.querySelector('.js-success-massage');
+  massageElm.classList.add('opacity');
+
+  setTimeout(() => {
+    massageElm.classList.remove('opacity');
+  }, 3000);
 }
 
 document.querySelector('.js-submit').addEventListener('click', () => {
   const validate = validation();
-
-  const form = document.querySelector('form');
   if (!validate) {
     removeStyle();
-    form.submit();
+    successMassage();
   }
 });
 

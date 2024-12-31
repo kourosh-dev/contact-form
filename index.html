@@ -16,12 +16,19 @@
 
 </head>
 <body>
+  <div class="success-massage js-success-massage">
+    <div class="header-alert">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21"><path fill="#fff" d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg>
+      <span class="header-alert-massage">massage sent!</span>
+    </div>
+    <p class="massage-alert">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
   <div class="container">
     <h1 class="h1">Contact Us</h1>
     <form class="form" autocomplete="off">
       <div class="fild-row">
         <div class="fild-grid">
-          <div class="container-input">
+          <div>
             <label class="label-top" for="first-name">
               first name 
               <span class="asteris"> *</span>
@@ -29,7 +36,7 @@
             <input class="input-height input-text js-fields" type="text" name="first-name" id="first-name">
             <div class="error-massage js-error-field">This field is required</div>
           </div>
-          <div class="container-input">
+          <div>
             <label class="label-top" for="last-name">
               last name
               <span class="asteris"> *</span>
@@ -40,7 +47,7 @@
         </div>
       </div>
       <div class="fild-row">
-        <div class="container-input">
+        <div>
           <label class="label-top" for="email">
             email address 
             <span class="asteris"> *</span>
@@ -55,12 +62,12 @@
           <span class="asteris"> *</span>
         </label>
         <div class="fild-grid grid-radio">
-          <div class="container-input cont-radio js-radio-cont">
+          <div class="cont-radio js-radio-cont">
             <svg class="checked-radio-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 20 21"><path fill="#0C7D69" d="M10 .75a9.75 9.75 0 1 0 9.75 9.75A9.76 9.76 0 0 0 10 .75Zm0 18a8.25 8.25 0 1 1 8.25-8.25A8.26 8.26 0 0 1 10 18.75Zm5.25-8.25a5.25 5.25 0 1 1-10.499 0 5.25 5.25 0 0 1 10.499 0Z"/></svg>
             <input class="input-height js-radio" type="radio" name="query-type" id="general-enquiry">
             <label for="general-enquiry">general enquiry</label>
           </div>
-          <div class="container-input cont-radio js-radio-cont">
+          <div class="cont-radio js-radio-cont">
             <svg class="checked-radio-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 20 21"><path fill="#0C7D69" d="M10 .75a9.75 9.75 0 1 0 9.75 9.75A9.76 9.76 0 0 0 10 .75Zm0 18a8.25 8.25 0 1 1 8.25-8.25A8.26 8.26 0 0 1 10 18.75Zm5.25-8.25a5.25 5.25 0 1 1-10.499 0 5.25 5.25 0 0 1 10.499 0Z"/></svg>
             <input class="input-height js-radio" type="radio" name="query-type" id="support-request">
             <label for="support-request">support request</label>
@@ -69,7 +76,7 @@
         <div class="error-massage js-error-radio">Pleas select a query type</div>
       </div>
       <div class="fild-row">
-        <div class="container-input">
+        <div>
           <label class="label-top" for="massage">
             massage
             <span class="asteris"> *</span>
@@ -79,15 +86,15 @@
         </div>
       </div>
       <div class="fild-row row-field-check">
-        <div class="container-input">
+        <div>
           <svg class="checkbox-icon js-checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 18 18"><path fill="#0C7D69" d="M16.5 0h-15A1.5 1.5 0 0 0 0 1.5v15A1.5 1.5 0 0 0 1.5 18h15a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 16.5 0Zm-3.22 7.28-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.751.751 0 0 1 1.06 1.06Z"/></svg>
           <input class="js-checkbox" type="checkbox" name="check" id="check">
           <label class="js-label-checkbox" for="check">
             I consent to being contacted by the team
             <span class="asteris"> *</span>
           </label>
-          <div class="error-massage js-error-checkbox">To submit form, pleas consent to being contacted</div>
         </div>
+        <div class="error-massage js-error-checkbox">To submit form, pleas consent to being contacted</div>
       </div>
       <button class="submit-button js-submit" type="button">submit</button>
     </form>
